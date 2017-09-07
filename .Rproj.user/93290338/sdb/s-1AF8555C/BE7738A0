@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "source(\"imageTest.R\")\nlibrary(\"TDA\")\n\n# datos <- red\n# ancho <- ncol(datos)\n# alto <- nrow(datos)\n# precision <- 1000\n# malla <- seq(0, 1, length.out = precision)\n# resultado <- array(dim = c(alto, ancho, precision))\n# \n# for(j in 1:alto){\n#   for(i in 1:ancho){\n#     resultado[j,i,] <- distFct(red[j,i],malla)\n#   }\n# }\n\n\naplicar_a_imagen <- function(imagen, precision, funcion){\n  ancho <- ncol(imagen)\n  alto <- nrow(imagen)\n  malla <- seq(0, 1, length.out = precision)\n  resultado <- array(dim = c(alto, ancho, precision))\n  for(j in 1:alto){\n    for(i in 1:ancho){\n      resultado[j,i,] <- funcion(red[j,i],malla)\n    }\n  }\n  resultado\n}\n\nprueba <- aplicar_a_imagen(red, 1000, distFct)\n",
+    "created" : 1504751163303.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1285631171",
+    "id" : "BE7738A0",
+    "lastKnownWriteTime" : 1504756936,
+    "last_content_update" : 1504756936264,
+    "path" : "~/proyectos/tda/imageTDA.R",
+    "project_path" : "imageTDA.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

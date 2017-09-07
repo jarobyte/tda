@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(TDA)\n\ndatos <- 0.5\n\ngrid <- seq(0, 1, by = 0.01)\n\ndistance <- distFct(datos, grid)",
+    "created" : 1504753641861.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "72371867",
+    "id" : "C571782D",
+    "lastKnownWriteTime" : 1504753798,
+    "last_content_update" : 1504753798741,
+    "path" : "~/proyectos/tda/test.R",
+    "project_path" : "test.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

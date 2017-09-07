@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(jpeg)\n\nimage <- readJPEG(\"images/images.jpg\")\nred <- image[,,1]\ngreen <- image[,,2]\nblue <- image[,,3]\n\n# writeJPEG(red, target = \"img1.jpg\")\n# writeJPEG(green, target = \"img2.jpg\")\n# writeJPEG(blue, target = \"img3.jpg\")",
+    "created" : 1504744220586.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2738923693",
+    "id" : "A6DEB70B",
+    "lastKnownWriteTime" : 1504750396,
+    "last_content_update" : 1504750396367,
+    "path" : "~/proyectos/tda/imageTest.R",
+    "project_path" : "imageTest.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(graphics)\nlibrary(\"TDA\")\n\nX <- circleUnif(400)\nXlim <- c(-1.6, 1.6); Ylim <- c(-1.7, 1.7); by <- 0.065\nXseq <- seq(Xlim[1], Xlim[2], by = by)\nYseq <- seq(Ylim[1], Ylim[2], by = by)\nGrid <- expand.grid(Xseq, Yseq)\n\ndistance <- distFct(X, Grid)\n\nh <- 0.3\nKDE <- kde(X = X, Grid = Grid, h = h)\n\npersp(Xseq, Yseq,matrix(distance, ncol = length(Yseq), nrow = length(Xseq)), \n      xlab = \"\",ylab = \"\", zlab = \"\", theta = -20, phi = 35, ltheta = 50,col = 2, border = NA, main = \"distance\", d = 0.5, scale = FALSE,\n      expand = 3, shade = 0.9)\n",
+    "created" : 1504740737730.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4135444608",
+    "id" : "E734748A",
+    "lastKnownWriteTime" : 1504756937,
+    "last_content_update" : 1504756937663,
+    "path" : "~/proyectos/tda/tda.R",
+    "project_path" : "tda.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
